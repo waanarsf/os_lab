@@ -1,0 +1,13 @@
+Lab Exercises
+2. Write a shell script to list all files (only file names) containing the input pattern
+3. Write a shell script to replace all files with .txt extension with .text in the current di-
+“OS” with abc.txt then it has to be changed to abc.text ( Hint: use find, mv )
+Floating point calculations has to be performed.
+current folder to the new folder input by the user. ex: user enter .text TEXT then all
+level. i.e if the current folder contains a folder name ABC which has .txt files then
+Write a shell script to modify all occurrences of “ex:” with “Example:” in all the filespresent
+in current folder only if “ex:” occurs at the start of the line or after a period (.). Example:
+ex: should not be replaced as it occurs in the middle of the sen-tence.”
+Additional Exercises
+2. Write a shell script to find the factorial of number.
+numbered line to a file with name evenfile and odd numbered lines to a file called
