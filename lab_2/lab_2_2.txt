@@ -1,0 +1,45 @@
+lab2_2
+echo "q2_1 grep command to select the lines from a file that have exactly two characters."
+q2_1 grep command to select the lines from a file that have exactly two characters.
+4ITA2@debian:~/rakshit_240911742/lab_2$ grep -x ".." fruit.txt
+ui
+ux
+pi
+4ITA2@debian:~/rakshit_240911742/lab_2$ echo "q2_2 grep command To select the lines from a file that start with the upper case letter."
+q2_2 grep command To select the lines from a file that start with the upper case letter.
+4ITA2@debian:~/rakshit_240911742/lab_2$ grep "^[A-Z]" fruit.txt
+4ITA2@debian:~/rakshit_240911742/lab_2$ 
+4ITA2@debian:~/rakshit_240911742/lab_2$ grep "^[A-Z]" fruit.txt
+APPLES 
+Banana
+Mango
+4ITA2@debian:~/rakshit_240911742/lab_2$ echo "q2_3 grep command To select the lines from a file that end with a period"
+q2_3 grep command To select the lines from a file that end with a period
+4ITA2@debian:~/rakshit_240911742/lab_2$ grep "\.$" fruit.txt
+4ITA2@debian:~/rakshit_240911742/lab_2$ grep "\.$" fruit.txt
+4ITA2@debian:~/rakshit_240911742/lab_2$ grep "\.$" fruit.txt
+banana.
+pear.
+peach.
+orange.
+4ITA2@debian:~/rakshit_240911742/lab_2$ echo "q2_4 grep command To select the lines in a file that has one or more blank spaces."
+q2_4 grep command To select the lines in a file that has one or more blank spaces.
+4ITA2@debian:~/rakshit_240911742/lab_2$ grep " " fruit.txt
+APPLES 
+i love fruits.
+i love mangos.
+i will have a banana
+4ITA2@debian:~/rakshit_240911742/lab_2$ grep " " fruit.txt
+i love fruits.
+i love mangos.
+i will have a banana
+4ITA2@debian:~/rakshit_240911742/lab_2$ sort -o fruit.txt fruit.txt
+4ITA2@debian:~/rakshit_240911742/lab_2$ sort -o fruit.txt
+strawberry
+
+4ITA2@debian:~/rakshit_240911742/lab_2$ echo "q2_5 grep command to To select the lines in a file and direct them to another file which has digits as
+one of the characters in that line."
+q2_5 grep command to To select the lines in a file and direct them to another file which has digits as
+one of the characters in that line.
+4ITA2@debian:~/rakshit_240911742/lab_2$ grep "[0-9]" data.csv > temp.txt
+

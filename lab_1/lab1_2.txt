@@ -1,0 +1,90 @@
+4ITA2@debian:~/rakshit_240911742/lab_1$ cat lab1_2.txt
+lab1_1.txt
+lab1_2.txt
+
+
+4ITA2@debian:~/rakshit_240911742/lab_1$ head lab1_1.txt
+4ITA2@debian:~$ mkdir rakshit_240911742
+4ITA2@debian:~$ cd rakshit_240911742/
+4ITA2@debian:~/rakshit_240911742$ mkdir lab_1
+4ITA2@debian:~/rakshit_240911742$ cd lab_1
+4ITA2@debian:~/rakshit_240911742/lab_1$ touch lab1_1.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ echo $SHELL
+/bin/bash
+4ITA2@debian:~/rakshit_240911742/lab_1$ touch lab2_2.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ cd ~
+4ITA2@debian:~$ cd rakshit_240911742/
+
+4ITA2@debian:~/rakshit_240911742/lab_1$ tail lab1_1.txt
+lab1_1.txt  lab2_2.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ pwd
+/home/4ITA2/rakshit_240911742/lab_1
+4ITA2@debian:~/rakshit_240911742/lab_1$ ls file*
+ls: cannot access 'file*': No such file or directory
+4ITA2@debian:~/rakshit_240911742/lab_1$ ls lab1*
+lab1_1.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ rm -rf lab2_2.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ ls
+lab1_1.txt
+
+
+4ITA2@debian:~/rakshit_240911742/lab_1$ cp -n temp.txt temp
+4ITA2@debian:~/rakshit_240911742/lab_1$ cd temp
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ ls
+temp.txt
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ cp -i temp.txt lab_1
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ cd ..
+4ITA2@debian:~/rakshit_240911742/lab_1$ ls
+lab1_1.png  lab1_1.txt  lab1_2.txt  temp  temp.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ cp -f temp.txt temp
+
+
+4ITA2@debian:~/rakshit_240911742/lab_1$ mkdir temp2
+4ITA2@debian:~/rakshit_240911742/lab_1$ touch file1.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ mv file1.txt temp2
+4ITA2@debian:~/rakshit_240911742/lab_1$ ls
+lab1_1.png  lab1_1.txt  lab1_2.txt  temp  temp2  temp.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ touch file1.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ mv -i file1.txt temp2
+mv: overwrite 'temp2/file1.txt'? y
+4ITA2@debian:~/rakshit_240911742/lab_1$ ls
+lab1_1.png  lab1_1.txt  lab1_2.txt  temp  temp2  temp.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ cp temp.txt temp2
+4ITA2@debian:~/rakshit_240911742/lab_1$ mv -f temp.txt temp2
+4ITA2@debian:~/rakshit_240911742/lab_1$ cd temp2
+4ITA2@debian:~/rakshit_240911742/lab_1/temp2$ ls
+file1.txt  temp.txt
+4ITA2@debian:~/rakshit_240911742/lab_1/temp2$ cd ..
+4ITA2@debian:~/rakshit_240911742/lab_1$ ls
+lab1_1.png  lab1_1.txt  lab1_2.txt  temp  temp2
+4ITA2@debian:~/rakshit_240911742/lab_1$ mv temp2 temp
+
+
+4ITA2@debian:~/rakshit_240911742/lab_1$ rm -r temp2
+4ITA2@debian:~/rakshit_240911742/lab_1$ mkdir temp3
+4ITA2@debian:~/rakshit_240911742/lab_1$ cd temp
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ ls
+lab_1  temp2  temp.txt
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ rm -i temp.txt
+rm: remove regular empty file 'temp.txt'? y
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ rm -f lab_1
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ ls
+temp2
+
+
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ mkdir temp1
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ rmdir temp1
+4ITA2@debian:~/rakshit_240911742/lab_1/temp$ ls
+temp2
+
+
+4ITA2@debian:~/rakshit_240911742/lab_1$ find -name lab1_1.txt
+./lab1_1.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ find -name temp.txt
+./temp/temp2/temp.txt
+4ITA2@debian:~/rakshit_240911742/lab_1$ find . -type d
+.
+./temp
+./temp/temp2
+./temp3
+
